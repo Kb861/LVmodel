@@ -22,7 +22,7 @@ function varargout = fig(varargin)
 
 % Edit the above text to modify the response to help fig
 
-% Last Modified by GUIDE v2.5 13-Apr-2019 12:46:33
+% Last Modified by GUIDE v2.5 13-Apr-2019 15:30:58
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -297,3 +297,13 @@ function text6_CreateFcn(hObject, eventdata, handles)
 % hObject    handle to text6 (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    empty - handles not created until after all CreateFcns called
+
+
+% --- Executes during object creation, after setting all properties.
+function axes8_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to axes8 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+axes(hObject)
+imshow('lv.jpg')
+% Hint: place code in OpeningFcn to populate axes8
