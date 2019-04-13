@@ -142,7 +142,7 @@ hold off
 axes(handles.axes3);
 plot(t,y)
 grid on
-title('Model z kryjówkami')
+%title('Model z kryjówkami')
 %legend({'populacja ofiar'; 'populacja drapie¿ników'})
 xlabel('Czas[s]')
 ylabel('Liczebnosc populacji')
@@ -160,7 +160,7 @@ hold off
 axes(handles.axes5);
 plot(t,y)
 grid on
-title('Model z ograniczon¹ pojemnoœci¹')
+%title('Model z ograniczon¹ pojemnoœci¹')
 xlabel('Czas[s]')
 ylabel('Liczebnosc populacji')
 
@@ -287,6 +287,14 @@ plot(x,z)
 grid on
 xlabel('Czas[s]')
 ylabel('Liczebnosc populacji')
+if(x>z)
+    a='Populacja ofiar jest wiêksza'
+    set(handles.wynik, 'String',a)
+
+    b='Populacja drapie¿ników jest wiêksza'
+    set(handles.wynik, 'String',b)
+end
+if(x<z)
 
 
 
