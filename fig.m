@@ -22,7 +22,7 @@ function varargout = fig(varargin)
 
 % Edit the above text to modify the response to help fig
 
-% Last Modified by GUIDE v2.5 13-Apr-2019 15:30:58
+% Last Modified by GUIDE v2.5 13-Apr-2019 15:51:21
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -101,7 +101,7 @@ axes(handles.axes1);
 datacursormode on
 plot(t,y)
 grid on
-legend({'populacja ofiar'; 'populacja drapie¿ników'})
+%legend({'populacja ofiar'; 'populacja drapie¿ników'})
 xlabel('Czas[s]')
 ylabel('Liczebnosc populacji')
 
@@ -143,7 +143,7 @@ axes(handles.axes3);
 plot(t,y)
 grid on
 title('Model z kryjówkami')
-legend({'populacja ofiar'; 'populacja drapie¿ników'})
+%legend({'populacja ofiar'; 'populacja drapie¿ników'})
 xlabel('Czas[s]')
 ylabel('Liczebnosc populacji')
 
@@ -307,3 +307,13 @@ function axes8_CreateFcn(hObject, eventdata, handles)
 axes(hObject)
 imshow('lv.jpg')
 % Hint: place code in OpeningFcn to populate axes8
+
+
+% --- Executes during object creation, after setting all properties.
+function axes9_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to axes9 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+axes(hObject)
+imshow('legenda.PNG')
+% Hint: place code in OpeningFcn to populate axes9
