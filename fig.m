@@ -287,11 +287,12 @@ plot(x,z)
 grid on
 xlabel('Czas[s]')
 ylabel('Liczebnosc populacji')
-%if(x>z)
-  %  a='Populacja ofiar jest wiêksza'
- %   set(handles.wynik, 'String',a)
+time = x(2:2,:)-x(1:1,:)
+Y = sprintf('%.2f',time)
+
+set(handles.czas, 'String',Y)
   
-%end
+
 
 
 
