@@ -133,6 +133,8 @@ axes(handles.axes2);
 X1=y(:,1);
 Y1=y(:,2);
 plot(X1,Y1)
+xlabel('Populacja drapie¿ników')
+ylabel('Populacja ofiar')
 hold on
 plot(A1,A2,'r*')
 plot(A3,A4,'r*')
@@ -151,6 +153,8 @@ axes(handles.axes4);
 X1=y(:,1);
 Y1=y(:,2);
 plot(X1,Y1)
+xlabel('Populacja drapie¿ników')
+ylabel('Populacja ofiar')
 hold on 
 plot(A1_k,A2_k,'r*')
 hold off
@@ -168,6 +172,8 @@ axes(handles.axes6);
 X1=y(:,1);
 Y1=y(:,2);
 plot(X1,Y1)
+xlabel('Populacja drapie¿ników')
+ylabel('Populacja ofiar')
 hold on
 plot(A1_o,A2_o,'r*')
 plot(A3_o,A4_o,'r*')
