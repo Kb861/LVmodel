@@ -96,7 +96,7 @@ b =str2double( get(handles.edit3,'String'));
 s =str2double( get(handles.edit4,'String'));
 
 
-[t,y]=ode45(@model,[1 100],[ 20 1],[],[r aVP b s],[]);
+[t,y]=ode45(@model,[1 50],[ 3, 1],[],[r aVP b s],[]);
 axes(handles.axes1);
 datacursormode on
 plot(t,y)
